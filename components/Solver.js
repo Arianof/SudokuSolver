@@ -22,7 +22,28 @@ export function insertValues(){
  }
 }
 
+export function solve(row , col){
+   if(row == 8 && col == 9)
+      return true;
+  
+   if(col == 9){
+    row++;
+    col = 0;
+   }
 
+   if(board[row][col])
+      return solve(row, col + 1);
+
+   for(let i = 1 ; i < 10 ; i++){
+       if(isSafe(row , col , i)){
+          board[row][col] = i;
+          if(solve(row , col + 1))
+             return true;
+       }
+       board[row][col] = 0;
+   }
+   return false;
+}
 function isSafe(row , col , num){
  for(let i = 0 ; i < 9 ;i++){
      if(board[row][i] == num)
