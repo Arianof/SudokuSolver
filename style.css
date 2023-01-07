@@ -33,3 +33,13 @@ width: 50%;
  background-color:rgb(10, 10, 10);
  color: greenyellow;
 }
+input:focus
+,input:active{
+ border: 0;
+ outline: 0;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
