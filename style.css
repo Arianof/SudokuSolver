@@ -8,3 +8,28 @@
 body{
  background-color:rgb(10, 10, 10);
 }
+
+.sudoku_solver{
+margin: 4% 32%;
+width: 50%;
+}
+.puzzle{
+ width: 540px;
+ height: 540px;
+}
+.sudoku_text{
+ text-align: center;
+ width: 540px;
+ padding-bottom: 4%;
+ font-size: 35px;
+ color: greenyellow;
+}
+.puzzle #cell{
+ text-align: center;
+ font-size: 30px;
+ width: 60px;
+ height: 60px;
+ border: 1px indigo solid;
+ background-color:rgb(10, 10, 10);
+ color: greenyellow;
+}
