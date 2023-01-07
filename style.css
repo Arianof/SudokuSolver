@@ -67,3 +67,6 @@ button:hover{
  border: 0.5px greenyellow solid;
  border-radius: 2px;
 }
+.odd_section{
+ background-color: #9944ad !important;
+}
