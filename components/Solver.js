@@ -63,3 +63,13 @@ function isSafe(row , col , num){
 
  return true;
 }
+export function insertAnswers(){
+ const inputs = document.querySelectorAll('input');
+ let k = 0;
+ for(let i = 0 ; i < 9; i++){
+     for(let j = 0 ; j < 9 ; j++){
+         inputs[k].value = board[i][j];
+         k++;
+     }
+ }
+}
