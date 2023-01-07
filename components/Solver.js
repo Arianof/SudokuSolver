@@ -21,3 +21,24 @@ export function insertValues(){
      }
  }
 }
+
+
+function isSafe(row , col , num){
+ for(let i = 0 ; i < 9 ;i++){
+     if(board[row][i] == num)
+        return false;
+ }
+ for(let i = 0 ; i < 9 ;i++){
+     if(board[i][col] == num)
+        return false;
+ }
+ let startRow = row - row % 3; 
+ let startCol = col - col % 3;
+ 
+ for(let i = 0 ; i < 3 ; i++)
+     for(let j = 0 ; j < 3 ; j++)
+         if(board[i + startRow][j + startCol] == num)
+            return false;
+
+ return true;
+}
