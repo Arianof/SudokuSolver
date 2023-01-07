@@ -43,3 +43,27 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
+.buttons{
+ text-align: center;
+ width: 540px;
+ padding-top: 2%;
+}
+button{
+ padding:10px 50px;
+ margin:0 1%;
+ font-size: 20px;
+ border: 1px black solid;
+ border-radius: 4px;
+ background-color: greenyellow;
+}
+button:hover{
+ background-color: black;
+ color: greenyellow;
+ text-shadow: 0 0 1px;
+ text-shadow: 0 0 2px;
+ transition-duration: 0.25s;
+ cursor: pointer;
+ border: 0.5px greenyellow solid;
+ border-radius: 2px;
+}
